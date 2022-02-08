@@ -17,3 +17,24 @@ userName= "Aleksandar";
 let isInstructor: boolean;
 
 isInstructor = true;
+
+// More complex types
+
+// array with strings
+let hobbies: string[];
+
+hobbies = ["Sports", "Cooking"];
+
+let person: {
+  name: string;
+  age: number;
+};
+
+person = {
+  name: "Aca",
+  age: 39
+}
+
+// person = {
+//   isEmployee: true;
+// }
