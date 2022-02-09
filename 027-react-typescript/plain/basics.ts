@@ -55,3 +55,18 @@ let course = 'React - The Complete Guide';
 let machine: string | number | number[] = "This is Linux";
 
 machine = 23223;
+
+// Type aliases
+type Computer = {
+  name: string;
+  price: number;
+}
+
+let computer1: Computer;
+
+computer1 = {
+  name: "iMac",
+  price: 2000
+}
+
+let computers: Computer[];
