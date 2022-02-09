@@ -70,3 +70,13 @@ computer1 = {
 }
 
 let computers: Computer[];
+
+// Functions and types
+
+function add(a: number, b: number):number {
+  return a + b;
+}
+
+function printOutput(value: any) {
+  console.log(value);
+}
