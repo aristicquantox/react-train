@@ -49,3 +49,9 @@ let people: {
 let course = 'React - The Complete Guide';
 
 //course = 12345;
+
+// Union types
+
+let machine: string | number | number[] = "This is Linux";
+
+machine = 23223;
