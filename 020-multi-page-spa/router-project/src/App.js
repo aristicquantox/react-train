@@ -1,10 +1,20 @@
 import { Route, Switch } from "react-router-dom";
+
+import AllQuotes from "./pages/AllQuotes";
+import QuoteDetails from "./pages/QuoteDetails";
+import NewQuote from "./pages/NewQuote";
 function App() {
   return (
     <Switch>
-      <Route path="/qoutes"></Route>
-      <Route path="/qoutes/:qouteId"></Route>
-      <Route path="/new-quote"></Route>
+      <Route path="/quotes" exact>
+        <AllQuotes />
+      </Route>
+      <Route path="/quotes/:qouteId">
+        <QuoteDetails />
+      </Route>
+      <Route path="/new-quote">
+        <NewQuote />
+      </Route>
     </Switch>
   );
 }
