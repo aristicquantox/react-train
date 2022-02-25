@@ -15,3 +15,7 @@ https://academind.com/tutorials/hide-javascript-code
 ## REST APIs vs GraphQL APIs
 
 https://academind.com/tutorials/rest-vs-graphql
+
+## HTTP response status codes
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
