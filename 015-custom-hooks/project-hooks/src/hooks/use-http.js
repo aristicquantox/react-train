@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const useHttp = (requestConfig, applyData) => {
-  const FIREBASE_DOMAIN = process.env.REACT_APP_FIREBASE_DOMAIN;
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
@@ -10,9 +9,9 @@ const useHttp = (requestConfig, applyData) => {
     setError(null);
     try {
       const response = await fetch(requestConfig.url, {
-        method: requestConfig.method,
-        headers: requestConfig.headers,
-        body: JSON.stringify(requestConfig.body),
+        method: requestConfig.method ? requestConfig.method : "GET",
+        headers: requestConfig.headers ? requestConfig.headers : {},
+        body: requestConfig.body ? JSON.stringify(requestConfig.body) : null,
       });
 
       if (!response.ok) {
